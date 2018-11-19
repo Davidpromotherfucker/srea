@@ -10,22 +10,22 @@ client.on('message', message => {
       
   if (message.content.startsWith(adminprefix + 'sg')) {
     client.user.setGame(argresult);
-      message.channel.send(`**✅**`)
+      message.channel.send(`**NowPlaying**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'sw')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**✅**`)
+      message.channel.send(`**NowWatching**`)
   } else 
   if (message.content.startsWith(adminprefix + 'sl')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**✅**`)
+      message.channel.send(`**Nowlistening**`)
   } else 
   if (message.content.startsWith(adminprefix + 'st')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
-      message.channel.send(`**✅**`)
+      message.channel.send(`**NowStreaming**`)
   }
   if (message.content.startsWith(adminprefix + 'sn')) {
   client.user.setUsername(argresult).then
